@@ -12,7 +12,8 @@ def load_data():
 
 try:
     with st.spinner("Loading geospatial data..."):
-        data = load_data()
+        data = load_data
+        st.info(f"The columns in your map are: {data.columns.tolist()}")
 
     # --- CHANGE THIS TO YOUR EXACT QGIS COLUMN NAME ---
     # Example: "PROVINCE", "Name_EN", "ADM1_EN", etc.
